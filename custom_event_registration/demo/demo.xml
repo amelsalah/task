@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+
+        <record id="webinar1" model="event.event">
+            <field name="name">Webinar1</field>
+            <field name="date_begin" eval="(DateTime.now() + timedelta(days=10)).strftime('%Y-%m-%d 08:00:00')"/>
+            <field name="date_end" eval="(DateTime.now() + timedelta(days=14)).strftime('%Y-%m-%d 18:00:00')"/>
+        </record>
+
+        <record id="contacts_1" model="res.partner">
+            <field name="name">Alice Brown</field>
+            <field name="phone">1231112223</field>
+        </record>
+
+        <record id="contacts_2" model="res.partner">
+            <field name="name">Bob Crown</field>
+            <field name="email">bob@crowns.com</field>
+        </record>
+
+        <record id="contacts_3" model="res.partner">
+            <field name="name">Carlos Drew</field>
+            <field name="email">carl@drewess.com</field>
+            <field name="phone">3453334445</field>
+        </record>
+
+        <record id="contacts_4" model="res.partner">
+            <field name="name">Doug Emerty</field>
+            <field name="phone">4564445556</field>
+        </record>
+
+        <record id="contacts_5" model="res.partner">
+            <field name="name">Egan Fair</field>
+            <field name="email">eg@fairness.com</field>
+            <field name="phone">5675556667</field>
+        </record>
+
+
+        <record id="lead_1" model="crm.lead">
+            <field name="email_from">kevin@keith.com</field>
+        </record>
+
+        <record id="lead_2" model="crm.lead">
+            <field name="name">Lucy</field>
+            <field name="email_from">lucy@liu.com</field>
+            <field name="phone">3210001112</field>
+        </record>
+
+        <record id="lead_3" model="crm.lead">
+            <field name="name">Mary Middle</field>
+            <field name="email_from">mary@middle.com</field>
+            <field name="phone">3331112223</field>
+        </record>
+
+        <record id="lead_4" model="crm.lead">
+            <field name="phone">4442223334</field>
+        </record>
+
+        <record id="lead_5" model="crm.lead">
+
+            <field name="email_from">ole@olson.com</field>
+        </record>
+
+    </data>
+</odoo>
